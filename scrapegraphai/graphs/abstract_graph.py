@@ -5,23 +5,21 @@ AbstractGraph Module
 import asyncio
 import uuid
 import warnings
-import time
 from abc import ABC, abstractmethod
 from typing import Optional, Type
 
-from langchain.chat_models import init_chat_model
+from langchain_core.language_models.chat_models import init_chat_model
 from langchain_core.rate_limiters import InMemoryRateLimiter
 from pydantic import BaseModel
 
 from ..helpers import models_tokens
-from ..models import CLoD, DeepSeek, OneApi, XAI
+from ..models import CLoD, DeepSeek, Nvidia, OneApi, XAI
 from ..utils.logging import set_verbosity_info, set_verbosity_warning, get_logger
-from ..telemetry import log_graph_execution
 
 logger = get_logger(__name__)
 
 # ANSI escape sequence for hyperlink
-CLICKABLE_URL = "\033]8;;https://scrapegraphai.com/oss\033\\https://scrapegraphai.com/oss\033]8;;\033\\"
+CLICKABLE_URL = "\033]8;;https://scrapegraphai.com\033\\https://scrapegraphai.com\033]8;;\033\\"
 
 class AbstractGraph(ABC):
     """
@@ -264,14 +262,7 @@ class AbstractGraph(ABC):
                     return ChatTogether(**llm_params)
 
                 elif model_provider == "nvidia":
-                    try:
-                        from langchain_nvidia_ai_endpoints import ChatNVIDIA
-                    except ImportError:
-                        raise ImportError(
-                            """The langchain_nvidia_ai_endpoints module is not installed.
-                                          Please install it using `pip install langchain-nvidia-ai-endpoints`."""
-                        )
-                    return ChatNVIDIA(**llm_params)
+                    return Nvidia(**llm_params)
 
         except Exception as e:
             raise Exception(f"Error instancing model: {e}")

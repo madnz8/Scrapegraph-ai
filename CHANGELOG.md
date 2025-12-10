@@ -1,3 +1,57 @@
+## [1.65.0](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.64.2...v1.65.0) (2025-12-08)
+
+
+### Features
+
+* empty commit ([5f07858](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5f0785892f4ba33d31408ab200e5b002d98a8a4b))
+
+## [1.64.2](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.64.1...v1.64.2) (2025-12-04)
+
+
+### Bug Fixes
+
+* trigger build ([c582303](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/c58230319c936a519a0e659f93ebac2fdab80947))
+
+## [1.64.1](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.64.0...v1.64.1) (2025-12-03)
+
+
+### Bug Fixes
+
+* add null check for document.body when reading scrollHeight ([6c5f7bb](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/6c5f7bb1558e378adb5acd07b81635118db711b0))
+
+
+### chore
+
+* apply semantic commit format as requested ([34e1308](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/34e13084761e6de767e13966edd67bee1e2ef4f2))
+
+
+### Docs
+
+* add guide for applying semantic commit format ([2920d8b](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/2920d8bcc07226ff21a08e0d5fe6b839beee5c36))
+* update korean readme ([5516ec6](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/5516ec6f7743a86355ca2d320bcfdfaa8e868101))
+* update semantic commit guide to use feat(timeout) ([dcd4f9c](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/dcd4f9cd1a07f212b681e5f044253580adf157a7))
+
+## [1.64.0](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.63.1...v1.64.0) (2025-11-06)
+
+
+### Features
+
+* Add configurable timeout to FetchNode ([e81a4ed](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/e81a4ed74540c6fb3be9465a698d8de9df72a74b))
+
+## [1.63.1](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.63.0...v1.63.1) (2025-10-24)
+
+
+### Bug Fixes
+
+* url redirect ([8f0433c](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/8f0433cfb6c7b6fc7bb542a8956858fc7b4b5ea2))
+
+## [1.63.0](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.62.0...v1.63.0) (2025-10-22)
+
+
+### Features
+
+* update model tokens ([79db9b9](https://github.com/ScrapeGraphAI/Scrapegraph-ai/commit/79db9b9f1341475474fca9b159325973e730a865))
+
 ## [1.62.0](https://github.com/ScrapeGraphAI/Scrapegraph-ai/compare/v1.61.0...v1.62.0) (2025-08-13)
 
 
